@@ -3,5 +3,7 @@ djangorestframework
 markdown
 django-filter
 psycopg2>=2.8
+numpy
 pandas
 joblib
+sklearn
