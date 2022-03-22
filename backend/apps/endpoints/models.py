@@ -100,5 +100,7 @@ class ABTest(models.Model):
     ended_at = models.DateTimeField(blank=True, null=True)
     summary = models.CharField(max_length=10000, blank=True, null=True)
 
-    parent_mlalgorithm_1 = models.ForeignKey(MLAlgorithm, on_delete=models.CASCADE, related_name="parent_mlalgorithm_1")
-    parent_mlalgorithm_2 = models.ForeignKey(MLAlgorithm, on_delete=models.CASCADE, related_name="parent_mlalgorithm_2")
+    parent_mlalgorithm_1 = models.ForeignKey(MLAlgorithm, on_delete=models.CASCADE, 
+                                                related_name="parent_mlalgorithm_1")
+    parent_mlalgorithm_2 = models.ForeignKey(MLAlgorithm, on_delete=models.CASCADE, 
+                                                related_name="parent_mlalgorithm_2")

@@ -27,8 +27,8 @@ class MLTests(TestCase):
         my_alg = RandomForestClassifier()
         response = my_alg.compute_prediction(input_data)
         self.assertEqual('OK', response['status'])
-        self.assertTrue('predicted_income' in response)
-        self.assertEqual('<=50K', response['predicted_income'])
+        self.assertTrue('label' in response)
+        self.assertEqual('<=50K', response['label'])
 
     def test_registry(self):
         registry = MLRegistry()
@@ -68,5 +68,5 @@ class MLTests(TestCase):
         my_alg = ExtraTreesClassifier()
         response = my_alg.compute_prediction(input_data)
         self.assertEqual('OK', response['status'])
-        self.assertTrue('predicted_income' in response)
-        self.assertEqual('<=50K', response['predicted_income'])
+        self.assertTrue('label' in response)
+        self.assertEqual('<=50K', response['label'])
