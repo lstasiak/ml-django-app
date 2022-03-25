@@ -1,6 +1,6 @@
 # ml-django-app
 
-An example of simple Machine Learning (ML) service implemented in Django & DRF (with connection to PostgreSQL) and managed with use of Docker environment. 
+An example of simple Machine Learning (ML) models integrated with Django & DRF (with connection to PostgreSQL) and managed with use of Docker environment. The goal for this project is to learn and practice implementation of ML model in web service. 
 
 ### ML part
 
@@ -48,7 +48,7 @@ and to start the container:
 
 ```
 $ docker-compose up
-```
+``
 
 On the local machine the web server is available on: http://0.0.0.0:8000/api/v1/
 
