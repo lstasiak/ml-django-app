@@ -48,7 +48,7 @@ and to start the container:
 
 ```
 $ docker-compose up
-``
+```
 
 On the local machine the web server is available on: http://0.0.0.0:8000/api/v1/
 
@@ -57,13 +57,16 @@ To execute django commands related to `manage.py` on running web container, we n
 ```
 $ docker-compose exec web python ./backend/manage.py <OPTION>
 ```
-For example:
- 	- To run unit tests:
-		```
-		$ docker-compose exec web python ./backend/manage.py test apps.ml.tests
-		```
 
-	- To run django shell_plus:
-		```
-		$ docker-compose exec web python ./backend/manage.py shell_plus
-		```
+Examples.
+a) To run unit tests:
+
+```
+$ docker-compose exec web python ./backend/manage.py test apps.ml.tests
+```
+
+b) To run django shell_plus:
+
+```
+$ docker-compose exec web python ./backend/manage.py shell_plus
+```
